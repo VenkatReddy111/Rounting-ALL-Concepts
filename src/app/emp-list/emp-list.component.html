@@ -1,0 +1,7 @@
+<h1>Employee-list</h1>
+<div class="item;container">
+    <ul (click)='add(employee)' *ngFor="let employee of Employees">
+    <li><span [class.selected]="isSelected(employee)" class="badge badge-info">{{employee.id}}</span>{{employee.name}}</li>
+</ul>
+</div>
+
